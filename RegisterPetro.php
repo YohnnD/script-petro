@@ -9,7 +9,7 @@ $password = "s6M9ya25JA2";
 $dbname = "sysprim";
 
 date_default_timezone_set('America/Caracas');
-$executionDate="15:59";
+$executionDate="16:07";
 
 
 
@@ -29,13 +29,10 @@ function sendMessage($phone, $text)
     curl_close($handler);
 
 }
-$dateInsert = date('Y-m-d H:i:s');
-var_dump($dateInsert);
-die();
+
 
 
 if($executionDate==date('H:i')) {
-
     try {
 
 
