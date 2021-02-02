@@ -9,7 +9,7 @@ $password = "2020localsemat";
 $dbname = "sysprim_palavecino";
 
 date_default_timezone_set('America/Caracas');
-$executionDate="15:34";
+$executionDate="15:48";
 
 
 
