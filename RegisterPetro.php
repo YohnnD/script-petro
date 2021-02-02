@@ -29,10 +29,13 @@ function sendMessage($phone, $text)
     curl_close($handler);
 
 }
-
+$dateInsert = date('Y-m-d H:i:s');
+var_dump($dateInsert);
+die();
 
 
 if($executionDate==date('H:i')) {
+
     try {
 
 
