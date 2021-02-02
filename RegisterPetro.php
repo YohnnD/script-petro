@@ -9,7 +9,7 @@ $password = "s6M9ya25JA2";
 $dbname = "sysprim";
 
 date_default_timezone_set('America/Caracas');
-$executionDate="16:07";
+$executionDate="07:35";
 
 
 
@@ -63,7 +63,7 @@ if($executionDate==date('H:i')) {
 
         try {
             sendMessage("+584141585586", "El valor del petro ha sido registrado con éxito.Tasa del dia " . $fiscalPeriod . " : " . number_format($petro["PTR"]["BS"], 2) . ", Equipo Sysprim(SEMAT).");
-            // sendMessage("+584145515706", "El valor del petro ha sido registrado con éxito.Tasa del dia ".$fiscalPeriod.":" .number_format($petro["PTR"]["BS"],2).", Equipo Sysprim(SEMAT).");
+            sendMessage("+584145515706", "El valor del petro ha sido registrado con éxito.Tasa del dia ".$fiscalPeriod.":" .number_format($petro["PTR"]["BS"],2).", Equipo Sysprim(SEMAT).");
         } catch (Exception $e) {
 
         }
