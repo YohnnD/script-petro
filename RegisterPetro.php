@@ -3,15 +3,13 @@
 $fields = ['coins' => ["PTR", "BTC"] , 'fiats' => ["USD", "BS"]];
 
 $driver = "mysql";
-$host = "localhost";
-$user = "root";
-$password = "";
-$dbname = "sysprim";
+$host = "192.168.0.15";
+$user = "sysprim";
+$password = "2020localsemat";
+$dbname = "sysprim_palavecino";
 
 date_default_timezone_set('America/Caracas');
 $executionDate="15:34";
-
-
 
 
 
@@ -35,7 +33,6 @@ function sendMessage($phone, $text)
 
 
 if($executionDate==date('H:i')) {
-    var_dump(date('H:i'));
     try {
 
 
