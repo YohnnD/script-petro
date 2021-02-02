@@ -3,10 +3,10 @@
 $fields = ['coins' => ["PTR", "BTC"] , 'fiats' => ["USD", "BS"]];
 
 $driver = "mysql";
-$host = "192.168.0.15";
-$user = "sysprim";
-$password = "2020localsemat";
-$dbname = "sysprim_palavecino";
+$host = "34.67.113.104";
+$user = "ajamy";
+$password = "s6M9ya25JA2";
+$dbname = "sysprim";
 
 date_default_timezone_set('America/Caracas');
 $executionDate="15:48";
@@ -54,11 +54,11 @@ if($executionDate==date('H:i')) {
 
         $fiscalPeriod = date('Y-d-m');
         $value = $petro["PTR"]["BS"];
-        $dateInsert = date('Y-d-m H:i:s');
+        $dateInsert = date('Y-m-d H:i:s');
 
         $resultRegister = $dbConexion->query("
                 INSERT INTO foreign_exchange (name,fiscal_period,value ,created_at,updated_at)
-                VALUES ( 'Petro','$fiscalPeriod','$value','$dateInsert','$dateInsert')");
+                VALUES ( 'Petros','$fiscalPeriod','$value','$dateInsert','$dateInsert')");
         $dbConexion->commit();
 
         try {
