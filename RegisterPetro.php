@@ -9,7 +9,7 @@ $password = "s6M9ya25JA2";
 $dbname = "sysprim";
 
 date_default_timezone_set('America/Caracas');
-$executionDate="15:48";
+$executionDate="15:59";
 
 
 
